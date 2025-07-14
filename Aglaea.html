@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aglaea - Honkai Star Rail Wiki</title>
+  <meta name="description" content="Wiki no oficial del personaje Aglaea de Honkai: Star Rail. Habilidades, historia, build y galería visual." />
+  <link rel="icon" href="favicon/Favicon-Aglaea.png" type="image/x-icon">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/Aglaea-style.css">
+  <style>
+    body {
+      background-image: url('img-fondos/Aglaea.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+      font-family: Helvetica, sans-serif;
+      color: white;
+      margin: 0;
+      padding: 0;
+    }
+
+    @keyframes fade-in {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .sumario h2 {
+      color: #c084fc;
+      text-shadow: 0 0 8px #9333ea;
+    }
+
+    .sumario a {
+      background: linear-gradient(90deg, #9333ea, #c084fc, #06b6d4);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+      font-weight: bold;
+      text-shadow: 0 0 5px rgba(147, 51, 234, 0.7);
+      transition: all 0.3s ease;
+    }
+
+    .sumario a:hover {
+      transform: scale(1.1);
+      text-shadow: 0 0 10px rgba(147, 51, 234, 1);
+    }
+
+    .sumario ol li::before {
+      content: counter(sumario-counter) ".";
+      position: absolute;
+      left: 0;
+      font-weight: bold;
+      background: linear-gradient(90deg, #9333ea, #c084fc, #06b6d4);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+      text-shadow: 0 0 5px rgba(147, 51, 234, 0.7);
+      transition: all 0.3s ease;
+    }
+
+    @keyframes fade-in {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    .animate-fade-in {
+      animation: fade-in 0.8s ease-out forwards;
+    }
+
+.sumario ol {
+  list-style: none;
+  counter-reset: sumario-counter;
+  padding-left: 0;
+}
+
+.sumario ol li {
+  counter-increment: sumario-counter;
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.sumario ol li::before {
+  content: counter(sumario-counter) ".";
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+  background: linear-gradient(90deg, #8b5cf6, #06b6d4); /* Colores bonitos */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  text-shadow: 0 0 5px rgba(139, 92, 246, 0.7);
+  transition: all 0.3s ease;
+}
+
+
+  </style>
+</head>
+
+<body class="text-white">
+  <div class="bg-gradient-to-r from-purple-900 via-indigo-800 to-purple-900 min-h-screen p-6 max-w-screen-lg mx-auto">
+    <header class="text-center mb-10 animate-fade-in">
+      <h1 class="text-5xl font-extrabold text-purple-300">Aglaea - Honkai: Star Rail</h1>
+      <p class="mt-3 text-lg text-gray-200">Wiki dedicada a Aglaea, la centinela radiante de sabiduría celestial y justicia implacable.</p>
+    </header>
+
+    <section class="text-center animate-fade-in">
+      <a href="https://honkai-star-rail.fandom.com/es/wiki/Aglaea" target="_blank" class="underline text-purple-200 hover:text-cyan-300">Ver en Fandom</a>
+      <div class="mt-4">
+        <img src="Carpeta Aglaea/icon.jpg" alt="Imagen de Aglaea"
+          class="mx-auto rounded-xl border-4 border-purple-500 hover:border-cyan-300 hover:scale-105 transition-all duration-300 shadow-2xl w-full max-w-md">
+      </div>
+    </section>
+
+    <aside class="sumario p-4 rounded-lg text-gray-100 max-w-sm mx-auto mt-6 animate-fade-in">
+      <h2 class="text-xl font-bold">Lista Wiki Aglaea</h2>
+      <ol class="list-decimal pl-4 space-y-2 mt-2">
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#historia">Historia</a></li>
+        <li><a href="#build">Build</a></li>
+        <li><a href="#galeria">Galería</a></li>
+      </ol>
+    </aside>
+
+    <section id="habilidades" class="mt-12 bg-gray-900 bg-opacity-70 rounded-xl p-6 animate-fade-in">
+      <h2 class="text-3xl font-semibold text-purple-300 mb-6">Habilidades</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-gray-800 rounded-lg p-4 shadow-lg">
+          <img src="img habilidades/habilidad Aglaea 1.png" alt="Ataque básico" class="w-12 h-12 mb-2">
+          <h3 class="text-xl text-purple-400 font-bold">Ataque básico: Destello de Castigo</h3>
+          <p class="text-sm mt-2">Inflige Daño Cuántico a un enemigo. Aumenta su vulnerabilidad si está bajo juicio.</p>
+        </div>
+        <div class="bg-gray-800 rounded-lg p-4 shadow-lg">
+          <img src="img habilidades/habilidad Aglaea 2.png" alt="Habilidad" class="w-12 h-12 mb-2">
+          <h3 class="text-xl text-purple-400 font-bold">Habilidad: Juicio Celestial</h3>
+          <p class="text-sm mt-2">Marca a todos los enemigos con Sello de Aglaea. Los aliados obtienen probabilidad crítica.</p>
+        </div>
+        <div class="bg-gray-800 rounded-lg p-4 shadow-lg">
+          <img src="img habilidades/habilidad Aglaea 3.png" alt="Ultimate" class="w-12 h-12 mb-2">
+          <h3 class="text-xl text-purple-400 font-bold">Ultimate: Trono de Luz Eterna</h3>
+          <p class="text-sm mt-2">Invoca un campo de juicio que inflige daño masivo y remueve potenciadores enemigos.</p>
+        </div>
+        <div class="bg-gray-800 rounded-lg p-4 shadow-lg">
+          <img src="img habilidades/habilidad Aglaea 4.png" alt="Talento" class="w-12 h-12 mb-2">
+          <h3 class="text-xl text-purple-400 font-bold">Talento: Doctrina Imparcial</h3>
+          <p class="text-sm mt-2">Por cada enemigo marcado, Aglaea gana acumulaciones de juicio, aumentando su daño.</p>
+        </div>
+        <div class="bg-gray-800 rounded-lg p-4 shadow-lg md:col-span-2">
+          <img src="img habilidades/habilidad Aglaea 5.png" alt="Técnica" class="w-12 h-12 mb-2">
+          <h3 class="text-xl text-purple-400 font-bold">Técnica: Ojo que Todo lo Ve</h3>
+          <p class="text-sm mt-2">Al entrar en combate, aplica Sello de Aglaea a todos los enemigos inmediatamente.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="historia" class="mt-12 bg-gray-900 bg-opacity-70 rounded-xl p-6 animate-fade-in">
+      <h2 class="text-3xl font-semibold text-purple-300 mb-6">Información del Personaje</h2>
+      <div class="flex flex-col md:flex-row items-center gap-6">
+        <img src="Carpeta Aglaea/eidilon.jpg" alt="Icono de personaje Aglaea" class="w-32 h-32 rounded-full border-4 border-purple-400">
+        <div class="text-left text-gray-300 space-y-3">
+          <p><strong>Nombre:</strong> Aglaea</p>
+          <p><strong>Rareza:</strong> 5 estrellas</p>
+          <p><strong>Elemento:</strong> Cuántico</p>
+          <p><strong>Rama:</strong> Erudición</p>
+          <p><strong>Afiliación:</strong> Comisión de Sabiduría Suprema</p>
+          <p><strong>Historia:</strong> Aglaea es una figura imponente de juicio y equilibrio. Su deber es preservar el orden divino del cosmos mediante sabiduría inflexible y brillante poder cuántico.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="build" class="mt-12 bg-gray-900 bg-opacity-70 rounded-xl p-6 text-center animate-fade-in">
+      <h2 class="text-3xl font-semibold text-purple-300 mb-4">Build Recomendada</h2>
+      <ul class="text-gray-300 text-left max-w-lg mx-auto space-y-4">
+        <li><img src="Carpeta Aglaea/cono de luz.jpg" alt="Cono de Luz" class="mx-auto mb-120 rounded-lg w-120"></li>
+        <li><strong>Cono de Luz:</strong> "Dictado de la Verdad Suprema"</li>
+        <li><strong>Artefactos:</strong> Sabiduría de la Estrella (4 piezas)</li>
+        <li><strong>Stats clave:</strong> ATQ%, Prob. Crítico, Daño Crítico, Efecto de Ruptura</li>
+      </ul>
+    </section>
+
+    <section id="galeria" class="mt-12 bg-gray-900 bg-opacity-70 rounded-xl p-6 text-center animate-fade-in">
+      <h2 class="text-3xl font-semibold text-purple-300 mb-4">Galería</h2>
+      <div class="relative w-full max-w-2xl mx-auto">
+        <div id="carousel" class="overflow-hidden rounded-lg shadow-xl">
+          <img id="carouselImage" src="img-galeria/Aglaea 1.jpg" alt="Imagen de galería" class="w-full transition-all duration-700 ease-in-out">
+        </div>
+        <button id="prev" class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-purple-500 hover:bg-purple-700 text-white p-2 rounded-full shadow-md">&#8592;</button>
+        <button id="next" class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-purple-500 hover:bg-purple-700 text-white p-2 rounded-full shadow-md">&#8594;</button>
+      </div>
+    </section>
+
+    <footer class="mt-16 text-center text-sm text-gray-400 animate-fade-in">
+      <p class="text-purple-300">Creado por fans para fans. Honkai: Star Rail pertenece a HoYoverse / miHoYo.</p>
+    </footer>
+  </div>
+
+  <script>
+    const images = [
+      'img-galeria/Aglaea 1.jpg',
+      'img-galeria/Aglaea 2.jpg',
+      'img-galeria/Aglaea 3.jpg',
+      'img-galeria/Aglaea 4.jpg'
+    ];
+
+    let currentIndex = 0;
+    const carousel = document.getElementById('carouselImage');
+    const prevBtn = document.getElementById('prev');
+    const nextBtn = document.getElementById('next');
+
+    function updateImage() {
+      carousel.style.opacity = 0;
+      setTimeout(() => {
+        carousel.src = images[currentIndex];
+        carousel.style.opacity = 1;
+      }, 300);
+    }
+
+    prevBtn.addEventListener('click', () => {
+      currentIndex = (currentIndex - 1 + images.length) % images.length;
+      updateImage();
+    });
+
+    nextBtn.addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % images.length;
+      updateImage();
+    });
+
+    setInterval(() => {
+      currentIndex = (currentIndex + 1) % images.length;
+      updateImage();
+    }, 5000);
+
+    window.addEventListener('load', updateImage);
+  </script>
+</body>
+</html>

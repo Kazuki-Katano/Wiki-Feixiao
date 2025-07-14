@@ -1,0 +1,94 @@
+body {
+  background-image: url('../img-fondos/Feixiao.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  font-family: Helvetica, sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+/* Animación de entrada suave */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  animation: fade-in 0.8s ease-out forwards;
+}
+
+.animate-fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.entrar {
+  animation: fade-in 0.8s ease-out forwards;
+}
+
+
+/* Estilo del sumario */
+.sumario h2 {
+  color: #38bdf8; /* Celeste fuerte */
+  text-shadow: 0 0 8px #0ea5e9;
+}
+
+.sumario ol {
+  list-style: none;
+  counter-reset: sumario-counter;
+  padding-left: 0;
+}
+
+.sumario ol li {
+  counter-increment: sumario-counter;
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.sumario ol li::before {
+  content: counter(sumario-counter) ".";
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+  background: linear-gradient(90deg, #0ea5e9, #38bdf8, #0ea5e9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  text-shadow: 0 0 5px rgba(14,165,233,0.7);
+  transition: all 0.3s ease;
+}
+
+.sumario ol li:hover::before {
+  transform: scale(1.1);
+  text-shadow: 0 0 10px #0ea5e9;
+}
+
+.sumario a {
+  background: linear-gradient(90deg, #0ea5e9, #38bdf8, #0ea5e9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  font-weight: bold;
+  text-shadow: 0 0 5px rgba(14,165,233,0.7);
+  transition: all 0.3s ease;
+}
+
+.sumario a:hover {
+  transform: scale(1.1);
+  text-shadow: 0 0 10px rgba(14,165,233,1);
+}
